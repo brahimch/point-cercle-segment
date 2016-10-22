@@ -17,18 +17,33 @@ public class Point {
         this.ordonnee = y;
     }
     public int getAbscisse() {
+
         return abscisse;
     }
 
     public void setAbscisse(int abscisse) {
+
         this.abscisse = abscisse;
     }
 
-    public int getOrdonnee() {
+    public int getOrdonnee()
+    {
         return ordonnee;
     }
 
     public void setOrdonnee(int ordonnee) {
+
         this.ordonnee = ordonnee;
+    }
+    public Point symetrie(Point x) {
+        Point image = x;
+        image.setOrdonnee(-x.getOrdonnee());
+        return image;
+    }
+
+
+    @Override
+    public String toString() {
+        return "(" + abscisse + ";" + ordonnee + ")";
     }
 }
