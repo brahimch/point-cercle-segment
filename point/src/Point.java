@@ -26,7 +26,7 @@ public class Point {
         return ordonnee;
     }
 
-   // bedeltlek hadi 
+    
     public String symetrie() {
         
         return "("+(-this.abscisse)+","+this.ordonnee+")";
