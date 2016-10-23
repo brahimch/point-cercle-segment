@@ -21,24 +21,15 @@ public class Point {
         return abscisse;
     }
 
-    public void setAbscisse(int abscisse) {
-
-        this.abscisse = abscisse;
-    }
-
     public int getOrdonnee()
     {
         return ordonnee;
     }
 
-    public void setOrdonnee(int ordonnee) {
-
-        this.ordonnee = ordonnee;
-    }
-    public Point symetrie(Point x) {
-        Point image = x;
-        image.setOrdonnee(-x.getOrdonnee());
-        return image;
+   // bedeltlek hadi 
+    public String symetrie() {
+        
+        return "("+(-this.abscisse)+","+this.ordonnee+")";
     }
 
 
